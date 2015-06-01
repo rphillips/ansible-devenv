@@ -1,0 +1,15 @@
+---
+- name: install
+  apt: name={{ item }} state=present update_cache=yes
+  with_items:
+    - build-essential
+    - clang
+    - cmake
+    - curl
+    - emacs
+    - git
+    - python
+    - silversearcher-ag
+    - tree
+    - vim
+    - virtualenv

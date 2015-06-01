@@ -1,0 +1,7 @@
+---
+- name: "install spacemacs"
+  git: repo=http://github.com/syl20bnr/spacemacs
+       dest=~/.emacs.d
+       version=develop
+- name: "install dotspacemacs"
+  copy: src=spacemacs dest=~/.spacemacs

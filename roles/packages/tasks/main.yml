@@ -1,0 +1,6 @@
+---
+- include: debian.yml
+  when: ansible_os_family == 'Debian'
+
+- fail: distribution not supported
+  when: ansible_os_family != 'Debian'

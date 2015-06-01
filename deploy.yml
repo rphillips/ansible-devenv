@@ -1,0 +1,8 @@
+---
+- hosts: all
+  tasks:
+    - user: name=rphillips comment="Ryan Phillips" uid=1040 group=sudo
+  roles:
+    - packages
+    - spacemacs
+    - dotvim
