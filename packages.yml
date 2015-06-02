@@ -1,6 +1,6 @@
 ---
 - hosts: all
   tasks:
-    - user: name=rphillips comment="Ryan Phillips" uid=1040 group=sudo
+    - include: tasks/create_user.yml local_user=ryan.phillips user=rphillips group=sudo full_name='Ryan Phillips' uid=1040
   roles:
     - packages
