@@ -1,3 +1,4 @@
 let g:dotvim_settings = {}
 let g:dotvim_settings.version = 1
+let g:dotvim_settings.plugin_groups_exclude = []
 source ~/.vim/vimrc
